@@ -30,4 +30,5 @@ module Players
        (move_to_make + 1).to_s
     end
 
+  end
 end
