@@ -1,6 +1,5 @@
 class Game
-  attr_accessor :board, :player_1, :player_2, :game_type, :first_player, :WIN_COMBINATIONS
-
+  attr_accessor :board, :player_1, :player_2, :game_type, :first_player
   WIN_COMBINATIONS = [
                       [0,1,2], [3,4,5], [6,7,8], # across
                       [0,3,6], [1,4,7], [2,5,8], # down
