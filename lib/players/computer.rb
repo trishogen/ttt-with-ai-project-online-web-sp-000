@@ -10,11 +10,16 @@ module Players
       self.token == 'X' ? 'O' : 'X'
     end
 
+    def win_comb
+      game = Game.new
+      game.WIN_COMBINATIONS
+    end
+
     def move(board)
       #set to any open position as default
       move_to_make = board.cells.index { |x| x == " " }
 
-      Game.WIN_COMBINATIONS.find do |v|
+      win_comb.find do |v|
          values = board.cells.values_at(v[0],v[1],v[2])
          #set move to a combo with 1 opp_token and 2 empty spaces
          if values.count(opp_token) == 1 && values.count(' ') == 2
