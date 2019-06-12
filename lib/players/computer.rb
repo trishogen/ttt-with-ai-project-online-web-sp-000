@@ -5,7 +5,6 @@ module Players
     def old_move(board)
       (board.cells.index { |x| x == " " } + 1).to_s
     end
-  end
 
   def opp_token
     self.token == 'X' ? 'O' : 'X'
