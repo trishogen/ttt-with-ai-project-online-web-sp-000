@@ -16,6 +16,7 @@ module Players
     end
 
     def move(board)
+      puts win_comb
       #set to any open position as default
       move_to_make = board.cells.index { |x| x == " " }
 
