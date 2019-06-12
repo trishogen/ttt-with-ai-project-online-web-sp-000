@@ -12,7 +12,7 @@ module Players
 
     def win_comb
       game = Game.new
-      game.WIN_COMBINATIONS
+      game.win_comb
     end
 
     def move(board)
