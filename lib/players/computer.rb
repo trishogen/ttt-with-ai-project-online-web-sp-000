@@ -11,8 +11,7 @@ module Players
     end
 
     def win_comb
-      game = Game.new
-      game.WIN_COMBINATIONS
+      Game::WIN_COMBINATIONS
     end
 
     def move(board)
